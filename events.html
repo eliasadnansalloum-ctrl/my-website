@@ -21,13 +21,30 @@
     </div>
 
     <nav>
-        <ul>
-            <li><a href="index.html">الصفحة الرئيسية</a></li>
-            <li><a href="events.html" style="color: #8ED9D3; font-weight: bold;">الفعاليات</a></li>
-            <li><a href="event.html">تفاصيل الفعاليات</a></li>
-            <li><a href="about.html">عن الدليل</a></li>
-            <li><a href="contact.html">اتصل بنا</a></li>
-        </ul>
+        <button class="mobile-menu-btn"
+        onclick="document.querySelector('body > nav ul').classList.toggle('show-menu')"
+        aria-label="فتح وإغلاق القائمة"
+        aria-expanded="false">
+    ☰
+</button>
+    <ul>
+        <li>
+                            <a href="index.html">الصفحة الرئيسية</a>
+
+        </li>
+
+        <li>
+            <a href="events.html">جميع الفعاليات</a>
+        </li>
+
+        <li>
+            <a href="about.html">عن الدليل</a>
+        </li>
+
+        <li>
+            <a href="contact.html">اتصل بنا</a>
+        </li>
+    </ul>
     </nav>
 
 
