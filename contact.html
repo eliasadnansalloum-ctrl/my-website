@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - دليل فعاليات الجامعة الافتراضية السورية</title>
+
+    <!-- Bootstrap لتنسيق الشبكة والنموذج والتنبيهات -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    
+<!-- Website Header -->
+<header class="site-title">
+    <h1>دليل الفعاليات والأنشطة في الجامعة الافتراضية السورية</h1>
+    <span class="svu">SVU</span>
+</header>
+
+            <!-- Main Navigation -->
+<nav class="main-navigation" aria-label="Main navigation">
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <label for="menu-toggle" class="mobile-menu-btn">
+        ☰
+    </label>
+
+    <ul id="mainMenu">
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="events.html">جميع الفعاليات</a></li>
+        <li><a href="about.html">عن الدليل</a></li>
+        <li><a href="contact.html" class="active">اتصل بنا</a></li>
+    </ul>
+
+</nav>
+
+    <main class="container my-5">
+        <section class="text-center mb-5">
+            <h1 class="fw-bold contact-main-title">تواصل معنا</h1>
+            <p class="text-muted mb-0">يسعدنا استقبال استفساراتكم وملاحظاتكم واقتراحاتكم حول فعاليات الجامعة.</p>
+        </section>
+
+        <div class="row g-4 align-items-stretch">
+            <!-- نموذج التواصل -->
+            <div class="col-lg-7">
+                <section class="contact-panel h-100">
+                    <h2 class="contact-section-title"><i class="bi bi-envelope-paper"></i> أرسل رسالة</h2>
+                    <p class="text-muted mb-4">يرجى تعبئة الحقول التالية، وجميعها مطلوبة.</p>
+
+                    <div id="formAlert" class="alert d-none" role="alert" aria-live="polite"></div>
+
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label fw-bold">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="contactName" name="name"
+                                   placeholder="أدخل اسمك الكامل" required minlength="2">
+                            <div class="invalid-feedback">يرجى إدخال الاسم (حرفان على الأقل).</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label fw-bold">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="contactEmail" name="email"
+                                   placeholder="example@email.com" required>
+                            <div class="invalid-feedback">يرجى إدخال بريد إلكتروني صحيح.</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="contactMessage" class="form-label fw-bold">الرسالة</label>
+                            <textarea class="form-control" id="contactMessage" name="message" rows="5"
+                                      placeholder="اكتب رسالتك هنا..." required minlength="10"></textarea>
+                            <div class="invalid-feedback">يرجى كتابة رسالة من 10 أحرف على الأقل.</div>
+                        </div>
+
+                        <button type="submit" class="btn contact-submit-btn">
+                            <i class="bi bi-send"></i> إرسال الرسالة
+                        </button>
+                        <button type="reset" class="btn btn-outline-secondary me-2">مسح الحقول</button>
+                    </form>
+                </section>
+            </div>
+
+            <!-- معلومات التواصل البديلة -->
+            <div class="col-lg-5">
+                <section class="contact-info-panel h-100">
+                    <h2 class="contact-section-title"><i class="bi bi-chat-dots"></i> معلومات التواصل</h2>
+                    <p>يمكنكم متابعة أخبار الدليل والتواصل معنا من خلال القنوات التالية:</p>
+
+                    <div class="contact-info-item">
+                        <span class="contact-icon"><i class="bi bi-envelope"></i></span>
+                        <div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p class="mb-0">info@svuonline.org</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <span class="contact-icon"><i class="bi bi-globe"></i></span>
+                        <div>
+                            <h3>موقع الجامعة</h3>
+                            <p class="mb-0"><a href="https://www.svuonline.org/" target="_blank" rel="noopener">الجامعة الافتراضية السورية</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <span class="contact-icon"><i class="bi bi-share"></i></span>
+                        <div>
+                            <h3>حسابات التواصل الاجتماعي</h3>
+                            <div class="contact-social-links">
+                                <!-- تُربط هذه الأزرار بالحسابات الرسمية عند تحديد روابطها -->
+                                <a href="#" aria-label="فيسبوك" title="فيسبوك"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="إنستغرام" title="إنستغرام"><i class="bi bi-instagram"></i></a>
+                                <a href="#" aria-label="يوتيوب" title="يوتيوب"><i class="bi bi-youtube"></i></a>
+                            </div>
+                            <small>تُضاف روابط الحسابات الرسمية هنا.</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-note mt-4">
+                        <i class="bi bi-info-circle"></i>
+                        نرحب بمقترحاتكم التي تساعد على تطوير الدليل وتحسين تجربة الزوار.
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- تذييل موحد مع بقية صفحات الموقع -->
+    <footer id="footer">
+        <h2>دليل فعاليات الجامعة الإفتراضية السورية</h2>
+        <p>نسعى إلى جمع الفعاليات والأنشطة الجامعية في مكان واحد لتسهيل الوصول إليها</p>
+        <h3>روابط سريعة</h3>
+        <nav aria-label="روابط التذييل">
+            <a href="index.html">الصفحة الرئيسية</a>      
+            
+            <a href="events.html">جميع الفعاليات</a>
+            <a href="about.html">عن الدليل</a>
+            <a href="contact.html">اتصل بنا</a>
+        </nav>
+        <p>تابعونا وابقوا معنا على اطلاع بأحدث الأنشطة الجامعية.</p>
+        <p>دليل فعاليات الجامعة الإفتراضية السورية 2026 - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+
+
+</body>
+</html>
